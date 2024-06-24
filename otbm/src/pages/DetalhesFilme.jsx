@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar2 from "../components/Detalhes/Navbar2";
 import Footer from "../components/Footer";
+import { FaHeart, FaStar } from 'react-icons/fa';
 
 export default function DetalhesFilme() {
     console.log(useParams())
@@ -29,11 +30,12 @@ export default function DetalhesFilme() {
                         <h2 className="text-3xl font-extrabold mb-5">Sinopse</h2>
                         <p className="text-xl mb-10">{filme.overview}</p>
                         <h2 className="text-2xl font-semibold">Data de lançamento:</h2>
-                        <p className="text-xl mb-2">{filme.release_date}</p>
+                        <p className="flex items-center text-xl mb-2">{filme.release_date}</p>
                         <h2 className="text-2xl font-semibold">Média dos votos:</h2>
-                        <p className="text-xl mb-2">{filme.vote_average}</p>
+                        <p className="flex items-center text-xl mb-2">{filme.vote_average}<FaStar className="ml-1 text-amber-500" /></p>
                         <h2 className="text-2xl font-semibold">Quantos votaram:</h2>
-                        <p className="text-xl mb-10">{filme.vote_count}</p>
+                        <p className="flex items-center text-xl mb-10">{filme.vote_count}<FaHeart className="ml-1 text-red-900" /></p>
+                        
                     </div>
             </div>
                     
