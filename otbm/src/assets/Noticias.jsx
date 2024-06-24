@@ -11,7 +11,7 @@ export default function Noticias() {
                     <div className="flex justify-center">
                         <img className="w-11/12" src="../../public/divisor.png" alt="" />
                     </div>
-                    <div className="flex justify-center items-center mt-5 mb-10 space-x-6" >
+                    <div className="flex justify-center items-center mt-10 mb-10 space-x-6" >
                         <div className="flex justify-center">
                             <img className="size-8/12" src={artigo.image} alt={artigo.image} />
                         </div>

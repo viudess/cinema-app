@@ -1,15 +1,17 @@
-import Navbar from "../components/Navbar"
+import Cards from "../assets/Cards";
+import Banner2 from "../components/Catalogo/Banner2"
+import Header3 from "../components/Catalogo/Header3";
+import Footer from "../components/Footer"
 
 export default function Catalogo() {
+
     return(
         <>
         <main>
-            <div className="flex justify-around items-center">
-                <img className="size-1/12" src="../../public/logo-otbm.png" alt="" />
-                <div>
-                    <Navbar />
-                </div>
-            </div>
+            <Header3 />
+            <Banner2 />
+            <Cards />
+            <Footer />
         </main>
         
         </>

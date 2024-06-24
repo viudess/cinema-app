@@ -6,6 +6,7 @@ import './index.css'
 import Home from './pages/Home.jsx'
 import Blog from './pages/Blog.jsx'
 import Catalogo from './pages/Catalogo.jsx'
+import DetalhesFilme from './pages/DetalhesFilme.jsx'
 
 
 const router = createBrowserRouter([{
@@ -14,7 +15,8 @@ const router = createBrowserRouter([{
   children: [
     {index: true, element: <Home />},
     {path: "blog", element: <Blog />},
-    {path: "catalogo", element: <Catalogo />}
+    {path: "catalogo", element: <Catalogo />},
+    {path: 'catalogo/:id', element: <DetalhesFilme/>}
   ]
 }])
 ReactDOM.createRoot(document.getElementById('root')).render(

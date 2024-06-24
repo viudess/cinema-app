@@ -1,6 +1,6 @@
 import Navbar from "../Navbar"
 
-export default function Header() {
+export default function Header2() {
     return(
         <>
             <div className="flex justify-around items-center">
