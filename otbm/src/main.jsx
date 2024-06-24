@@ -16,7 +16,8 @@ const router = createBrowserRouter([{
     {index: true, element: <Home />},
     {path: "blog", element: <Blog />},
     {path: "catalogo", element: <Catalogo />},
-    {path: 'catalogo/:id', element: <DetalhesFilme/>}
+    {path: 'catalogo/:id', element: <DetalhesFilme/>},
+    {path: '/:id', element: <DetalhesFilme/>}
   ]
 }])
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -22,7 +22,7 @@ export default function DetalhesFilme() {
     return ( 
         <>
         <Navbar2 />
-        <main className="flex justify-center">
+        <main className="flex justify-center mt-6">
             <div className="flex size-3/4">
                 <img className="w-4/12 mb-10 mr-10 rounded-3xl" src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`} alt="" />
                     <div className="text-white">
