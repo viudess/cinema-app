@@ -23,12 +23,12 @@ function card(titulo) {
                 filmes.map(filme => (
                     <Link to={`${filme.id}`} key={filme.id}>
                         <div className="mt-5 ">
-                            <div className="transition duration-500 bg-[#2c2c2c] flex flex-col rounded-2xl rounded-ee-none hover:bg-purple-900 w-60">
+                            <div className="transition duration-500 bg-[#2c2c2c] flex flex-col rounded-2xl rounded-ee-none hover:bg-purple-900 w-52 h-[22rem]">
                                 <div className="flex justify-center mt-5">
-                                    <img className="rounded-2xl w-44" src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`} alt="" />
+                                    <img className="rounded-2xl w-40" src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`} alt="" />
                                 </div>
-                                <div className="flex justify-center my-4 text-white text-center text-lg font-medium">
-                                    <h1 className="size-8/12">{filme.title}</h1>
+                                <div className="flex justify-center items-center my-4 text-white text-center text-lg font-medium">
+                                    <h1 className="size-10/12">{filme.title}</h1>
                                 </div>
                             </div>
                         </div>
