@@ -4,7 +4,6 @@ function App() {
   return (
     <>
     <div className="bg-[#090909]">
-      
       <Outlet />
     </div>
     </>

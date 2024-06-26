@@ -1,5 +1,6 @@
-import Footer from "../components/Footer"
-import data from "../../articles.json"
+import Footer from "../components/Footer";
+import data from "../../articles.json";
+import Divisor from "../../public/divisor.png";
 
 export default function Noticias() {
     return(
@@ -9,7 +10,7 @@ export default function Noticias() {
                 data.map( (artigo, index) => (
                 <div key={index}>
                     <div className="flex justify-center">
-                        <img className="w-11/12" src="../../public/divisor.png" alt="" />
+                        <img className="w-11/12" src={Divisor} alt="" />
                     </div>
                     <div className="flex justify-center items-center mt-10 mb-10 space-x-6" >
                         <div className="flex justify-center">

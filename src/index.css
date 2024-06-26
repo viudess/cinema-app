@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .flex-row.overflow-x-scroll::-webkit-scrollbar {
-    display: none; /* oculta a barra de rolagem no WebKit */
+    display: none;
 }
