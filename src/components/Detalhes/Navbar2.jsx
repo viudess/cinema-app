@@ -7,7 +7,7 @@ export default function Navbar2() {
         <>
         <div className="flex justify-around items-center py-5">
                 <img src={Logo} alt="" />
-                <Link to="../">
+                <Link to="/">
                 <div className="text-white text-3xl">
                     <FaArrowLeft/>
                 </div>
