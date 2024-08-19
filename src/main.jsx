@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+
 import App from './App.jsx'
-import './index.css'
 import Home from './pages/Home.jsx'
 import Blog from './pages/Blog.jsx'
-import Catalogo from './pages/Catalogo.jsx'
+import Pesquisa from './pages/Pesquisa.jsx'
+import Contacts from './pages/Contacts.jsx'
 import DetalhesFilme from './pages/DetalhesFilme.jsx'
 
+import './index.css'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -15,8 +17,9 @@ const router = createBrowserRouter([{
   children: [
     {index: true, element: <Home />},
     {path: "blog", element: <Blog />},
-    {path: "catalogo", element: <Catalogo />},
-    {path: 'catalogo/:id', element: <DetalhesFilme/>},
+    {path: "pesquisa", element: <Pesquisa/>},
+    {path: "contacts", element: <Contacts/>},
+    {path: 'pesquisa/:id', element: <DetalhesFilme/>},
     {path: '/:id', element: <DetalhesFilme/>}
   ]
 }])

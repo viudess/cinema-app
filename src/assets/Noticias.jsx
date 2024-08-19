@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import data from "../../articles.json";
 import Divisor from "../../public/divisor.png";
 
@@ -28,7 +27,6 @@ export default function Noticias() {
                 ))
             }
         </main>
-        <Footer />
         </>
     )
 }

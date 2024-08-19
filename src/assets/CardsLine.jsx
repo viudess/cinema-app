@@ -16,20 +16,20 @@ function card(titulo) {
 
     return(
         <>
-        <h1 className="text-white mt-10 pl-10 text-6xl font-bold">{titulo}</h1>
+        <h1 className="text-white pl-16 text-5xl font-bold">{titulo}</h1>
         <main className="flex justify-evenly">
-            <div className="flex flex-row overflow-x-scroll mt-5 mb-10 gap-16 pb-6 pl-10">
+            <div className="flex flex-row overflow-x-scroll mt-8 gap-8 pb-6 pl-16">
             {
                 filmes.map(filme => (
                     <Link to={`${filme.id}`} key={filme.id}>
-                        <div className="mt-5 ">
-                            <div className="transition duration-500 bg-[#2c2c2c] flex flex-col rounded-2xl rounded-ee-none hover:bg-purple-900 w-52 h-[22rem]">
-                                <div className="flex justify-center mt-5">
-                                    <img className="rounded-2xl w-40" src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`} alt="" />
+                        <div>
+                            <div className="w-52">
+                                <div className="flex justify-center">
+                                    <img className="rounded-2xl hover:border-4 border-white border-transition duration-100" src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`} alt="" />
                                 </div>
-                                <div className="flex justify-center items-center my-4 text-white text-center text-lg font-medium">
-                                    <h1 className="size-10/12">{filme.title}</h1>
-                                </div>
+                            </div>
+                            <div className="flex justify-center mt-4 text-white text-center text-lg font-medium">
+                                <h1 className="size-10/12">{filme.title}</h1>
                             </div>
                         </div>
                     </Link>
@@ -59,7 +59,7 @@ export default function CardsLine() {
 
     return(
         <>
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-14">
             {unidade.map(variacao => 
                 card(variacao.titulo)
             )}
