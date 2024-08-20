@@ -25,7 +25,7 @@ function card(titulo) {
                         <div>
                             <div className="w-52">
                                 <div className="flex justify-center">
-                                    <img className="rounded-2xl hover:border-4 border-white border-transition duration-100" src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`} alt="" />
+                                    <img className="rounded-2xl hover:border-4 border-white border-transition duration-150" src={`https://image.tmdb.org/t/p/w1280/${filme.poster_path}`} alt="" />
                                 </div>
                             </div>
                             <div className="flex justify-center mt-4 text-white text-center text-lg font-medium">

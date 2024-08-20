@@ -7,7 +7,7 @@ export default function Header() {
         <div className="flex justify-start pl-16">
             <main>
                 <div className="flex items-center">
-                        <img  className="" src={Logo} alt="" />
+                        <img  className="pr-10" src={Logo} alt="" />
                         <Navbar />
                 </div>
             </main>
