@@ -9,8 +9,8 @@ function Card({ titulo, genero }) {
 
     useEffect(() => {
         const url = genero 
-            ? `https://api.themoviedb.org/3/discover/movie?api_key=7c572a9f5b3ba776080330d23bb76e1e&with_genres=${genero}`
-            : `https://api.themoviedb.org/3/discover/movie?api_key=7c572a9f5b3ba776080330d23bb76e1e`;
+            ? `https://api.themoviedb.org/3/discover/movie?api_key=42d3670ecf0c0d4efc8b3afe08333462&with_genres=${genero}`
+            : `https://api.themoviedb.org/3/discover/movie?api_key=42d3670ecf0c0d4efc8b3afe08333462`;
 
         fetch(url)
             .then(response => response.json())
@@ -48,9 +48,16 @@ function Card({ titulo, genero }) {
 export default function CardsLine() {
 
     const unidades = [
-        { titulo: "Mais populares", genero: 18 },
+        { titulo: "Mais populares", genero: null },
         { titulo: "Terror", genero: 27 },
         { titulo: "Ação", genero: 28 },
+        { titulo: "Aventura", genero: 12 },
+        { titulo: "Comédia", genero: 35 },
+        { titulo: "Crimes", genero: 80 },
+        { titulo: "Drama", genero: 18 },
+        { titulo: "Família", genero: 10751 },
+        { titulo: "Romance", genero: 10749 },
+        { titulo: "Animação", genero: 16 },
     ];
 
     return (
