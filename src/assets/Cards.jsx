@@ -6,7 +6,7 @@ export default function Cards() {
     
     useEffect( () => {
 
-        fetch('https://api.themoviedb.org/3/discover/movie?api_key=7c572a9f5b3ba776080330d23bb76e1e')
+        fetch('https://api.themoviedb.org/3/discover/movie?api_key=42d3670ecf0c0d4efc8b3afe08333462')
         .then(response => response.json())
         .then(response => setFilmes(response.results))
         .catch (error => console.log(error))

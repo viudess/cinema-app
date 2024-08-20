@@ -8,7 +8,6 @@ import Blog from './pages/Blog.jsx'
 import Pesquisa from './pages/Pesquisa.jsx'
 import Contacts from './pages/Contacts.jsx'
 import DetalhesFilme from './pages/DetalhesFilme.jsx'
-import Search from './components/Search.jsx'
 
 import './index.css'
 
@@ -20,9 +19,7 @@ const router = createBrowserRouter([{
     {path: "blog", element: <Blog />},
     {path: "pesquisa", element: <Pesquisa/>},
     {path: "contacts", element: <Contacts/>},
-    {path: 'search', element: <Search />},
     {path: 'pesquisa/:id', element: <DetalhesFilme/>},
-    {path: 'search/:id', element: <DetalhesFilme/>},
     {path: '/:id', element: <DetalhesFilme/>},
     
 
