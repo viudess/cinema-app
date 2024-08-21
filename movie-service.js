@@ -1,4 +1,7 @@
-import { useState, useEffect } from 'react';
+import {
+    useState,
+    useEffect
+} from 'react';
 
 const apiKey = '42d3670ecf0c0d4efc8b3afe08333462';
 const urlBase = 'https://api.themoviedb.org/3/movie/';
