@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const apiKey = 'd1bef122d48992b960cc79c7306f5c1b';
+const apiKey = '42d3670ecf0c0d4efc8b3afe08333462';
 const urlBase = 'https://api.themoviedb.org/3/movie/';
 const urlSearch = 'https://api.themoviedb.org/3/search/movie';
 

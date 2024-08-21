@@ -10,7 +10,7 @@ export default function DetalhesFilme() {
 
     useEffect( () => {
 
-        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=7c572a9f5b3ba776080330d23bb76e1e&language=pt-BR`)
+        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=42d3670ecf0c0d4efc8b3afe08333462&language=pt-BR`)
         .then(response => response.json())
         .then(response => setFilme(response))
         .catch (error => console.log(error))
