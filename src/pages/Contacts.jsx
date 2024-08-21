@@ -44,21 +44,21 @@ export default function Contacts() {
                         placeholder="Nome" 
                         onChange={(e) => setName(e.target.value)}
                         value={name}
-                        className="bg-[#090909] text-white placeholder:text-white placeholder:text-3xl mb-5 border-b-8 border-[#6100FF] py-1 focus:outline-none text-3xl"/>
+                        className="bg-[#090909] text-white placeholder:text-white/70 placeholder:text-3xl mb-5 border-b-8 border-[#6100FF] py-1 focus:outline-none text-3xl"/>
 
                         <input 
                         type="email" 
                         placeholder="E-mail"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
-                        className="bg-[#090909] text-white placeholder:text-white placeholder:text-3xl mb-5 border-b-8 border-[#6100FF] py-1 focus:outline-none text-3xl"/>
+                        className="bg-[#090909] text-white placeholder:text-white/70 placeholder:text-3xl mb-5 border-b-8 border-[#6100FF] py-1 focus:outline-none text-3xl"/>
 
                         <input
                         type="text" 
                         placeholder="Mensagem" 
                         onChange={(e) => setMessage(e.target.value)}
                         value={message}
-                        className="bg-[#090909] text-white placeholder:text-white placeholder:text-3xl mb-5 border-b-8 border-[#6100FF] py-1 focus:outline-none text-3xl"/>
+                        className="bg-[#090909] text-white placeholder:text-white/70 placeholder:text-3xl mb-5 border-b-8 border-[#6100FF] py-1 focus:outline-none text-3xl"/>
 
                         <div className="flex justify-center mt-3">
                             <button type='submit' value="enviar" className="px-7 py-4 bg-gradient-to-r from-[#6100FF] to-[#00BA61] dark:bg-dmnav text-white font-semibold rounded-full focus:outline-none text-3xl">Enviar</button>
