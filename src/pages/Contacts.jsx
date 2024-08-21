@@ -33,7 +33,8 @@ export default function Contacts() {
 
     return(
         <>
-            <div className="flex justify-center">
+        <main className='h-[40rem]'>
+            <div className="flex justify-center ">
                 <h1 className="text-white text-5xl w-11/12 text-center pt-10">Contate-nos</h1>
             </div>
                 <div className="flex justify-center mt-12">
@@ -67,6 +68,7 @@ export default function Contacts() {
                         <p className='text-center text-white text-2xl mt-8'>Se precisar de ajuda, parceria ou tiver sugestões, envie sua mensagem aqui.</p>
                     </form>
                 </div>
+        </main>
         </>
     )
 }
